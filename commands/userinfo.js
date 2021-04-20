@@ -7,41 +7,45 @@ const status = {
   idle: "Idle",
   dnd: "Do Not Disturb",
   offline: "Offline/Invisible"
-};
-const randomColor = "#000000".replace(/0/g, function () { return (~~(Math.random() * 16)).toString(16); });
-exports.run = (client, message, args) => {
-  const member = message.mentions.members.first() || message.guild.members.get(args[0]) || message.member;
+    };
+
+    let user;
+  const member = message.mentions.users.first() || message.guild.members.cache.get(args[0]) || message.member;
   if (!member) return message.reply("Please provide a vaild Mention or USER ID");
-  let bot;
+  let isBot;
   if (member.user.bot === true) {
-    bot = "Yes";
+    isBot = "Yes";
   } else {
-    bot = "No";
+    isBot = "No";
   }
+
+    const members = message.guild.members.cache
+        .sort((a, b) => a.joinedTimestamp - b.joinedTimestamp)
+        .array();
+
+    const position = new Promise((ful) => {
+        for (let i = 1; i < members.length + 1; i++) {
+            if (members[i - 1].id === member.id) ful(i);
+        }
+    });
+
     const uicon = member.user.avatarURL;
     const userembed = new Discord.MessageEmbed()
         .setDescription(`User Information`)
-        .setColor(randomColor)
+        .setColor("00ffff")
         .setThumbnail(uicon)
         .setAuthor(member.user.username, uicon)
 		.addField("Name:", `${member.nickname !== null ? `Nickname: ${member.nickname}` : member.user.username}`, true)
-		.addField("Bot?", `${bot}`, true)
-		.addField("Status", `${status[member.user.presence.status]}`, true)
-		.addField("Playing", `${member.user.presence.game ? `${member.user.presence.game.name}` : "not playing anything."}`, true)
+		.addField("Bot?", `${isBot}`, true)
+		.addField("Status", `${status[member.presence.status]}`, true)
+		.addField("Playing", `${member.presence.activities[0].name ? `${member.presence.activities[0].name}` : "not playing anything."}`, true)
         .addField(`User Was Created On`, member.user.createdAt)
         .addField(`You Joined This Server On`, member.joinedAt)
-		.addField("Roles", `${member.roles.filter(r => r.id !== message.guild.id).map(roles => "<@&"+roles.id+">").join(" **|** ") || "No Roles"}`, true)
+        .addField(`Join Position`, await position)
+        .addField("Roles", `<@&${message.guild.member(message.author)._roles.join('> | <@&')}>`, true)
 
     message.channel.send(`${member.user.username}'s User Info:`);
     message.channel.send(userembed);
-};
-};
-
-exports.conf = {
-	enabled: true,
-	guildOnly: false,
-	aliases: ['whois', 'uinfo'],
-	permLevel: 0
 };
 
 module.exports.help = {

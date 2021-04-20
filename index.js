@@ -4,6 +4,7 @@ const Discord = require("discord.js");
 const fs = require("fs")
 const bot = new Discord.Client ({disableEveryone: true});
 let r6stats = require("./r6stats.json");
+const invites = {};
 bot.commands = new Discord.Collection();
 
 bot.on('warn', console.warn);
@@ -32,9 +33,31 @@ fs.readdir("./commands/", (err, files) => {
 
 })
 
+
+
 bot.on("ready", async () => {
-	console.log(`${bot.user.username} has successfully turned on properly! Aidan you didn't mess up the code this time!!! :D`);
-	bot.user.setActivity('over Tomb', {type: 'WATCHING' });
+	const activitylist = [
+		"over Tomb",
+		"over " + bot.guilds.cache.size + " guilds!",
+		"over " + bot.users.cache.size + " users!"
+	];
+	console.log(`${bot.user.username} has successfully turned on properly! Aidan you didn't mess up the code this time!!! :D`);;
+	bot.user.setPresence({ activity: { name: 'StartUp.exe' }, status: 'dnd' });
+
+	setTimeout(() => {
+		bot.guilds.cache.forEach(g => {
+			g.fetchInvites().then(guildInvites => {
+				invites[g.id] = guildInvites;
+			});
+		});
+	}, 1000)
+	setTimeout(() => {
+		setInterval(() => {
+			//bot.user.setActivity('over Tomb and ' + bot.guilds.cache.size + ' other guilds!', { type: 'WATCHING' });
+			const index = Math.floor(Math.random() * (activitylist.length));
+			bot.user.setPresence({ activity: { name: activitylist[index], type: 'WATCHING' }, status: 'online' });
+        }, 15000)
+    }, 20000)
 	//bot.user.setActivity('Y6S1 OPERATION CRIMSON HEIST', {url: 'https://twitch.tv/TheItzAidan', type: 'STREAMING'});
 });
 
@@ -145,34 +168,36 @@ bot.on("message", async message => {
 		 const discord = bot.emojis.cache.find(emoji => emoji.name === "discord");
 		 const ig = bot.emojis.cache.find(emoji => emoji.name === "ig");
 		 const fb = bot.emojis.cache.find(emoji => emoji.name === "fb");
+		 const reddit = bot.emojis.cache.find(emoji => emoji.name === "reddit");
 		  let gysedit = message.channel.messages.fetch({around: msgID, limit: 1})
 		 .then(message => {
 		 const fetchMsg = message.first();
 		 
-	 fetchMsg.edit(`**${tombemoji} Official Tomb Clan Social Media Links: ${tombemoji}**\n\n${yt} **:** <https://www.youtube.com/channel/UCOkw8SF81Y-M2yXr7JeAz5w> \n${twitter} **:** <https://twitter.com/tombclan> \n${discord} **:** <https://discord.gg/TNMuqTD> \n${ig} **:** <https://instagram.com/tombclan> \n${fb} **:** <https://facebook.com/TombClan>`);
+	 fetchMsg.edit(`**${tombemoji} Official Tomb Clan Social Media Links: ${tombemoji}**\n\n${yt} **:** <https://www.youtube.com/channel/UCOkw8SF81Y-M2yXr7JeAz5w> \n${twitter} **:** <https://twitter.com/tombclan> \n${discord} **:** <https://discord.gg/TNMuqTD> \n${ig} **:** <https://instagram.com/tombclan> \n${fb} **:** <https://facebook.com/TombClan> \n${tiktok} **:** <https://tiktok.com/@tombnetwork> \n${reddit} **:** <https://reddit.com/r/TombNetwork>`);
 	 })}*/
 	
 	
-	 /*const msgID = "783486925222051886";
+	 const msgID = "783486925222051886";
 	 let gysembed = new Discord.MessageEmbed()
 		 gysembed.setTitle("Get your Stats Here!")
 		 gysembed.setColor("#00FFFF")
-		 gysembed.addField("How to get your stats!", "For general stats type: **!r6 <username> <platform>**" + '\n\n' + "For operator stats type: **!r6op <username> <platform> <operator name>**" + '\n\n' + "For two top operators type: **!r6topops <username> <platform>**" + '\n\n' + "For seasonal ranked stats use the commands found in the message below." + '\n\n\n' + "<username is a uplay/psn/xbox username>" + '\n' + "<platform is pc/xbox/ps4>" + '\n' + "<operator name is the name of an operator CaSe SeNsItIvE>")
+		 gysembed.addField("How to get your stats!", "For general stats type: **!r6 <username> <platform>**" + '\n\n' + "For operator stats type: **!r6op <username> <platform> <operator name>**" + '\n\n' + "For two top operators type: **!r6topops <username> <platform>**" + '\n\n' + "For seasonal ranked stats use the commands found in the message below." + '\n\n\n' + "<username> is a uplay/psn/xbox username" + '\n' + "<platform> is pc/xbox/ps4" + '\n' + "<operator name> is the name of an operator CaSe SeNsItIvE")
 		 gysembed.addField("You can also get Halo Master Chief Collection stats!", "Type: **!halo <gamertag>**" + '\n\n' + "<gamertag> is your Xbox Gamertag. (which can include spaces)")
 		 gysembed.addField("NEW GAME STATS AVAILABLE!", "For CS:GO type: **!csgo <steamid/communityurl>** *your steam account must be public for stats to work*\nFor VALORANT type: **!valstats <name#tagline>**")
-		 gysembed.setFooter("Official Tomb Bot", message.guild.iconURL())
+		 gysembed.setFooter("Official Tomb Bot", bot.user.displayAvatarURL())
 		 gysembed.setTimestamp()
 		 
 	 let gysrankedembed = new Discord.MessageEmbed()
-		 gysrankedembed.setTitle("R6 Ranked Commands")
+		 gysrankedembed.setTitle("R6 Seasonal Codes")
 		 gysrankedembed.setColor("#00FFFF")
-		 gysrankedembed.addField("Year 5", "For Neon Dawn type: **!r6ranked <username> <platform>** \n For Shadow Legacy type: **!r6rankedshadow <username> <platform>** \n For Steel Wave type: **!r6rankedsteel <username> <platform>** \n For Void Edge type: **!r6rankedvoid <username> <platform>**")
-		 gysrankedembed.addField("Year 4", "For Shifting Tides type: **!r6rankedshifting <username> <platform>** \n For Ember Rise type: **!r6rankedember <username> <platform>** \n For Phantom Sight type: **!r6rankedphantom <username> <platform>** \n For Burnt Horizon type: **!r6rankedburnt <username> <platform>**")
-		 gysrankedembed.addField("Year 3", "For Wind Bastion type: **!r6rankedwind <username> <platform>** \n For Grim Sky type: **!r6rankedgrim <username> <platform>** \n For Para Bellum type: **!r6rankedpara <username> <platform>** \n For Chimera type: **!r6rankedchimera <username> <platform>**")
-		 gysrankedembed.addField("Year 2", "For White Noise type: **!r6rankedwhite <username> <platform>** \n For Blood Orchid type: **!r6rankedblood <username> <platform>** \n For Operation Health type: **!r6rankedhealth <username> <platform>**")
+		 gysrankedembed.addField("Year 6", "For Crimson Heist type: **!r6seasonal <username> <platform> crimson**")
+		 gysrankedembed.addField("Year 5", "For Neon Dawn type: **!r6seasonal <username> <platform> neon** \n For Shadow Legacy type: **!r6seasonal <username> <platform> shadow** \n For Steel Wave type: **!r6seasonal <username> <platform> steel** \n For Void Edge type: **!r6seasonal <username> <platform> void**")
+		 gysrankedembed.addField("Year 4", "For Shifting Tides type: **!r6seasonal <username> <platform> shifting** \n For Ember Rise type: **!r6seasonal <username> <platform> ember** \n For Phantom Sight type: **!r6seasonal <username> <platform> phantom** \n For Burnt Horizon type: **!r6seasonal <username> <platform> burnt**")
+		 gysrankedembed.addField("Year 3", "For Wind Bastion type: **!r6seasonal <username> <platform> wind** \n For Grim Sky type: **!r6seasonal <username> <platform> grim** \n For Para Bellum type: **!r6seasonal <username> <platform> parabellum** \n For Chimera type: **!r6seasonal <username> <platform> chimera**")
+		 gysrankedembed.addField("Year 2", "For White Noise type: **!r6seasonal <username> <platform> white** \n For Blood Orchid type: **!r6seasonal <username> <platform> blood** \n For Operation Health type: **!r6seasonal <username> <platform> health**")
 		 gysrankedembed.addField('\u200b', '\u200b')
 		 gysrankedembed.addField("Notes:", "• *Stats for Burnt Horizon and all previous do not show kills/deaths since Ubi's API doesn't have them it seems.* \n • *All stats before Operation Health are unavailable. Sorry About That!*")
-		 gysrankedembed.setFooter("Official Tomb Bot", message.guild.iconURL())
+		 gysrankedembed.setFooter("Official Tomb Bot", bot.user.displayAvatarURL())
 		 gysrankedembed.setTimestamp()
 	 if(cmd === `=gys`){
 	 return message.channel.send(gysembed);
@@ -185,7 +210,7 @@ bot.on("message", async message => {
 		 .then(message => {
 			 const fetchMsg = message.first();
 			 fetchMsg.edit(gysembed);
-	 })}*/
+	 })}
 	 
 	 /*var iconURL = message.guild.iconURL();
 	 
@@ -205,6 +230,52 @@ bot.on("message", async message => {
 			 const fetchMsg = message.first();
 			 fetchMsg.edit(gysembed);
 	 })}*/
+
+	/*if(cmd === `=teagrolesedit`){
+		 //const msgID = "720106361639403522";
+		 const amongusemoji = bot.emojis.cache.find(emoji => emoji.name === "aured");
+		  //let gysedit = message.channel.messages.fetch({around: msgID, limit: 1})
+		 //.then(message => {
+		 //const fetchMsg = message.first();
+	
+	 //fetchMsg.edit(`**${tombemoji} Official Tomb Clan Social Media Links: ${tombemoji}**\n\n${yt} **:** <https://www.youtube.com/channel/UCOkw8SF81Y-M2yXr7JeAz5w> \n${twitter} **:** <https://twitter.com/tombclan> \n${discord} **:** <https://discord.gg/TNMuqTD> \n${ig} **:** <https://instagram.com/tombclan> \n${fb} **:** <https://facebook.com/TombClan> \n${tiktok} **:** <https://tiktok.com/@tombnetwork> \n${reddit} **:** <https://reddit.com/r/TombNetwork>`);
+	 //})
+	 let teagrolesEmbed = new Discord.MessageEmbed()
+			.setAuthor(message.guild.name + "'s Reaction Roles!", message.guild.iconURL())
+			.setTitle("React to the message below to receive the associated role.")
+			.setDescription("If you would like to remove the role, simply remove your reaction!")
+			.setColor("C7FEE2")
+			.addField(amongusemoji, "Ping for Among Us")
+			.addField("🃏", "Ping for Cards Against Humanity")
+			.addField("🌃", "Ping for Town of Salem")
+			.addField("⛳", "Ping for Golf it")
+			.addField("🖊️", "Ping for Scribbl.io")
+			.setFooter("Official Tomb Bot", bot.user.displayAvatarURL())
+	
+		message.channel.send(teagrolesEmbed);
+	 }*/
+
+	if(cmd === `=tombrulesedit`){
+	 //const msgID = "720106361639403522";
+	 //const amongusemoji = bot.emojis.cache.find(emoji => emoji.name === "aured");
+	  //let gysedit = message.channel.messages.fetch({around: msgID, limit: 1})
+	 //.then(message => {
+	 //const fetchMsg = message.first();
+
+	let tombrules = new Discord.MessageEmbed()
+		.setAuthor(message.guild.name + "'s Server Rules!", message.guild.iconURL())
+		.setColor("00ffff")
+		.setDescription("As normal to every server there are a couple rules. Although I don't feel that anyone in this server is gonna be a problem, it's still good to have them.")
+		.addField("#1", "Follow the rules.")
+		.addField("#2", "Play fair no cheats hacks or any other means of ruining the gaming experience for others.")
+		.addField("#3", "Be fair to your fellow gamers, don't call them names or make fun of them they are just here to have fun and game with everyone else.")
+		.addField("#4", "Encourage those around you to always improve whether they are better or worse. As a group challenging each other to do better will lead to infinite growth.")
+		.addField("#5", "Have fun and make sure to use this channel as it is, a gaming channel. It's for the gaming fun of all in it  not a meme station or a joke train.")
+		.setFooter("Official Tomb Bot", bot.user.displayAvatarURL())
+		.setTimestamp()
+	
+	message.channel.send(tombrules);
+ }
 	
 	let user = message.author
 	
@@ -252,69 +323,242 @@ bot.on("message", async message => {
 
 });
 
-bot.on('voiceStateUpdate', (oldState, newState) => { //R6
-  const newUserChannel = newState.channelID
-  const oldUserChannel = oldState.channelID
-  const textChannel = newState.guild.channels.cache.get('714577203060539403')
-	
-  if(newUserChannel === '710609618824462416') {
-	wrmsg = textChannel.send(`<@&714576468906344491>, ${newState.member} has joined the waiting room!`)
+bot.setMaxListeners(17)
+//RAINBOW VOICE CHANNELS
+bot.on('voiceStateUpdate', (oldState, newState) => { //R6T1
+	const newUserChannel = newState.channelID
+	const oldUserChannel = oldState.channelID
+	const r6wrRole = newState.guild.roles.cache.find(role => role.name === "R6 In-Game");
+
+	if (newUserChannel === '681593685309259807') {
+		newState.member.roles.add(r6wrRole);
+	} else if (oldUserChannel === '681593685309259807' && newUserChannel !== '681593685309259807') {
+		newState.member.roles.remove(r6wrRole);
+	}
+})
+
+bot.on('voiceStateUpdate', (oldState, newState) => { //R6T2
+	const newUserChannel = newState.channelID
+	const oldUserChannel = oldState.channelID
+	const r6wrRole = newState.guild.roles.cache.find(role => role.name === "R6 In-Game");
+
+	if (newUserChannel === '681593753357910143') {
+		newState.member.roles.add(r6wrRole);
+	} else if (oldUserChannel === '681593753357910143' && newUserChannel !== '681593753357910143') {
+		newState.member.roles.remove(r6wrRole);
+	}
+})
+
+bot.on('voiceStateUpdate', (oldState, newState) => { //R6LIVE
+	const newUserChannel = newState.channelID
+	const oldUserChannel = oldState.channelID
+	const r6wrRole = newState.guild.roles.cache.find(role => role.name === "R6 In-Game");
+
+	if (newUserChannel === '814176439435001876') {
+		newState.member.roles.add(r6wrRole);
+	} else if (oldUserChannel === '814176439435001876' && newUserChannel !== '814176439435001876') {
+		newState.member.roles.remove(r6wrRole);
+	}
+})
+
+bot.on('voiceStateUpdate', (oldState, newState) => { //R6WR
+	const newUserChannel = newState.channelID
+	const oldUserChannel = oldState.channelID
+	const textChannel = newState.guild.channels.cache.get('714577203060539403')
+
+	if (newUserChannel === '710609618824462416') {
+		wrmsg = textChannel.send(`<@&714576468906344491>, ${newState.member} has joined the waiting room!`)
 	} else if (oldUserChannel === '710609618824462416' && newUserChannel !== '710609618824462416') {
-		textChannel.messages.fetch({ limit: 1}).then(collected => {collected.forEach(msg => {msg.delete()})});
+		textChannel.messages.fetch({ limit: 1 }).then(collected => { collected.forEach(msg => { msg.delete() }) });
 	}
 })
 
-bot.on('voiceStateUpdate', (oldState, newState) => { //VALHEIM
-  const newUserChannel = newState.channelID
-  const oldUserChannel = oldState.channelID
-  const textChannel = newState.guild.channels.cache.get('813310764899237909')
+//TARKOV VOICE CHANNELS
+bot.on('voiceStateUpdate', (oldState, newState) => { //TART1
+	const newUserChannel = newState.channelID
+	const oldUserChannel = oldState.channelID
+	const r6wrRole = newState.guild.roles.cache.find(role => role.name === "Tarkov/Squad In-Game");
 
-  if(newUserChannel === '813310039166812171') {
-    textChannel.send(`<@&813310616894308353>, ${newState.member} has joined the waiting room!`)
-  } else if (oldUserChannel === '813310039166812171' && newUserChannel !== '813310039166812171') {
-		textChannel.messages.fetch({ limit: 1}).then(collected => {collected.forEach(msg => {msg.delete()})});
+	if (newUserChannel === '684477649938153472') {
+		newState.member.roles.add(r6wrRole);
+	} else if (oldUserChannel === '684477649938153472' && newUserChannel !== '684477649938153472') {
+		newState.member.roles.remove(r6wrRole);
 	}
 })
 
-bot.on('voiceStateUpdate', (oldState, newState) => { //VALORANT
-  const newUserChannel = newState.channelID
-  const oldUserChannel = oldState.channelID
-  const textChannel = newState.guild.channels.cache.get('714905744494821417')
+bot.on('voiceStateUpdate', (oldState, newState) => { //TART2
+	const newUserChannel = newState.channelID
+	const oldUserChannel = oldState.channelID
+	const r6wrRole = newState.guild.roles.cache.find(role => role.name === "Tarkov/Squad In-Game");
 
-  if(newUserChannel === '710610147545841714') {
-    textChannel.send(`<@&714576809735225457>, ${newState.member} has joined the waiting room!`)
-  } else if (oldUserChannel === '710609618824462416' && newUserChannel !== '710609618824462416') {
-		textChannel.messages.fetch({ limit: 1}).then(collected => {collected.forEach(msg => {msg.delete()})});
+	if (newUserChannel === '684477676152815620') {
+		newState.member.roles.add(r6wrRole);
+	} else if (oldUserChannel === '684477676152815620' && newUserChannel !== '684477676152815620') {
+		newState.member.roles.remove(r6wrRole);
 	}
 })
 
-bot.on('voiceStateUpdate', (oldState, newState) => { //HALO
-  const newUserChannel = newState.channelID
-  const oldUserChannel = oldState.channelID
-  const textChannel = newState.guild.channels.cache.get('740659925222686791')
+bot.on('voiceStateUpdate', (oldState, newState) => { //TARLIVE
+	const newUserChannel = newState.channelID
+	const oldUserChannel = oldState.channelID
+	const r6wrRole = newState.guild.roles.cache.find(role => role.name === "Tarkov/Squad In-Game");
 
-  if(newUserChannel === '740661289013215436') {
-    textChannel.send(`<@&740660152482529407>, ${newState.member} has joined the waiting room!`)
-  } else if (oldUserChannel === '710609618824462416' && newUserChannel !== '710609618824462416') {
-		textChannel.messages.fetch({ limit: 1}).then(collected => {collected.forEach(msg => {msg.delete()})});
+	if (newUserChannel === '814177005405995078') {
+		newState.member.roles.add(r6wrRole);
+	} else if (oldUserChannel === '814177005405995078' && newUserChannel !== '814177005405995078') {
+		newState.member.roles.remove(r6wrRole);
+	}
+})
+
+bot.on('voiceStateUpdate', (oldState, newState) => { //TARKOVWR
+	const newUserChannel = newState.channelID
+	const oldUserChannel = oldState.channelID
+	const textChannel = newState.guild.channels.cache.get('740659925222686791')
+
+	if (newUserChannel === '740661289013215436') {
+		textChannel.send(`<@&740660152482529407>, ${newState.member} has joined the waiting room!`)
+	} else if (oldUserChannel === '740661289013215436' && newUserChannel !== '740661289013215436') {
+		textChannel.messages.fetch({ limit: 1 }).then(collected => { collected.forEach(msg => { msg.delete() }) });
+	}
+})
+
+//VALORANT VOICE CHANNELS
+bot.on('voiceStateUpdate', (oldState, newState) => { //VALOT1
+	const newUserChannel = newState.channelID
+	const oldUserChannel = oldState.channelID
+	const r6wrRole = newState.guild.roles.cache.find(role => role.name === "Valorant In-Game");
+
+	if (newUserChannel === '698592598134095873') {
+		newState.member.roles.add(r6wrRole);
+	} else if (oldUserChannel === '698592598134095873' && newUserChannel !== '698592598134095873') {
+		newState.member.roles.remove(r6wrRole);
+	}
+})
+
+bot.on('voiceStateUpdate', (oldState, newState) => { //VALOT2
+	const newUserChannel = newState.channelID
+	const oldUserChannel = oldState.channelID
+	const r6wrRole = newState.guild.roles.cache.find(role => role.name === "Valorant In-Game");
+
+	if (newUserChannel === '698592719362195666') {
+		newState.member.roles.add(r6wrRole);
+	} else if (oldUserChannel === '698592719362195666' && newUserChannel !== '698592719362195666') {
+		newState.member.roles.remove(r6wrRole);
+	}
+})
+
+bot.on('voiceStateUpdate', (oldState, newState) => { //VALOLIVE
+	const newUserChannel = newState.channelID
+	const oldUserChannel = oldState.channelID
+	const r6wrRole = newState.guild.roles.cache.find(role => role.name === "Valorant In-Game");
+
+	if (newUserChannel === '814176594821513237') {
+		newState.member.roles.add(r6wrRole);
+	} else if (oldUserChannel === '814176594821513237' && newUserChannel !== '814176594821513237') {
+		newState.member.roles.remove(r6wrRole);
+	}
+})
+
+bot.on('voiceStateUpdate', (oldState, newState) => { //VALORANTWR
+	const newUserChannel = newState.channelID
+	const oldUserChannel = oldState.channelID
+	const textChannel = newState.guild.channels.cache.get('714905744494821417')
+
+	if (newUserChannel === '710610147545841714') {
+		textChannel.send(`<@&714576809735225457>, ${newState.member} has joined the waiting room!`)
+	} else if (oldUserChannel === '710610147545841714' && newUserChannel !== '710610147545841714') {
+		textChannel.messages.fetch({ limit: 1 }).then(collected => { collected.forEach(msg => { msg.delete() }) });
+	}
+})
+
+//VALHEIM VOICE CHANNELS
+bot.on('voiceStateUpdate', (oldState, newState) => { //VALHT1
+	const newUserChannel = newState.channelID
+	const oldUserChannel = oldState.channelID
+	const r6wrRole = newState.guild.roles.cache.find(role => role.name === "Valheim In-Game");
+
+	if (newUserChannel === '813309982962876436') {
+		newState.member.roles.add(r6wrRole);
+	} else if (oldUserChannel === '813309982962876436' && newUserChannel !== '813309982962876436') {
+		newState.member.roles.remove(r6wrRole);
+	}
+})
+
+bot.on('voiceStateUpdate', (oldState, newState) => { //VALH6T2
+	const newUserChannel = newState.channelID
+	const oldUserChannel = oldState.channelID
+	const r6wrRole = newState.guild.roles.cache.find(role => role.name === "Valheim In-Game");
+
+	if (newUserChannel === '813309999165997106') {
+		newState.member.roles.add(r6wrRole);
+	} else if (oldUserChannel === '813309999165997106' && newUserChannel !== '813309999165997106') {
+		newState.member.roles.remove(r6wrRole);
+	}
+})
+
+bot.on('voiceStateUpdate', (oldState, newState) => { //VALHLIVE
+	const newUserChannel = newState.channelID
+	const oldUserChannel = oldState.channelID
+	const r6wrRole = newState.guild.roles.cache.find(role => role.name === "Valheim In-Game");
+
+	if (newUserChannel === '814176541734862868') {
+		newState.member.roles.add(r6wrRole);
+	} else if (oldUserChannel === '814176541734862868' && newUserChannel !== '814176541734862868') {
+		newState.member.roles.remove(r6wrRole);
+	}
+})
+
+bot.on('voiceStateUpdate', (oldState, newState) => { //VALHEIMWR
+	const newUserChannel = newState.channelID
+	const oldUserChannel = oldState.channelID
+	const textChannel = newState.guild.channels.cache.get('813310764899237909')
+
+	if (newUserChannel === '813310039166812171') {
+		textChannel.send(`<@&813310616894308353>, ${newState.member} has joined the waiting room!`)
+	} else if (oldUserChannel === '813310039166812171' && newUserChannel !== '813310039166812171') {
+		textChannel.messages.fetch({ limit: 1 }).then(collected => { collected.forEach(msg => { msg.delete() }) });
 	}
 })
 
 bot.on('guildMemberAdd', member => {
-  let guestRole = member.guild.roles.cache.find(role => role.name === "Guest");
-  if (!guestRole) return;
-  member.roles.add(guestRole)
-  let rulesChannel = member.guild.channels.cache.get('752659979269570674');
-  if (!rulesChannel) return;
-  member.send(`Welcome to the Tomb Clan Discord server, ${member}! Please read the ${rulesChannel} and enjoy your stay!`);
-  
- // member.roles.add(addRole)
+	let guestRole = member.guild.roles.cache.find(role => role.name === "Guest");
+	const tombLogChannel = member.guild.channels.cache.get("832165005523681290");
+	if (!guestRole) return;
+	if (!tombLogChannel) return;
+
+	member.guild.fetchInvites().then(guildInvites => {
+		const ei = invites[member.guild.id];
+		invites[member.guild.id] = guildInvites;
+		const invite = guildInvites.find(i => ei.get(i.code).uses < i.uses);
+		const inviter = bot.users.cache.get(invite.inviter.id);
+
+		let newUserEmbed = new Discord.MessageEmbed()
+			.setAuthor(member.user.tag + " (" + member.user.id + ") has joined the server!", member.user.avatarURL())
+			.setThumbnail(member.user.avatarURL())
+			.setDescription(`<@${member.user.id}>`)
+			.setColor("#00ff00")
+			.addField("Total Users:", member.guild.memberCount, true)
+			.addField("Account created on:", member.user.createdAt, true)
+			.addField("Invite Link: https://discord.gg/" + invite.code + " (Uses: " + invite.uses + ")", "Invited by: " + inviter.tag, true)
+			.setFooter("User ID: " + member.user.id)
+			.setTimestamp()
+		member.roles.add(guestRole, "New Member Joined Adding Guest Role")
+		tombLogChannel.send(newUserEmbed);
+	});
 });
 
-/*bot.on('guildMemberRemove', member => {
-  let leaveChannel = member.guild.channels.cache.get('752659979269570675');
-  if (!leaveChannel) return;
-  leaveChannel.send(`${member} has left the server!`);
-});*/
+bot.on('guildMemberRemove', member => {
+	const tombLogChannel = member.guild.channels.cache.get("832165005523681290");
+	if (!tombLogChannel) return;
+	let newUserEmbed = new Discord.MessageEmbed()
+		.setAuthor(member.user.tag + " (" + member.user.id + ") has left the server!", member.user.avatarURL())
+		.setThumbnail(member.user.avatarURL())
+		.setDescription(`<@${member.user.id}>`)
+		.setColor("#ff0000")
+		.addField("Total Users:", member.guild.memberCount)
+		.setFooter("User ID: " + member.user.id)
+		.setTimestamp()
+	tombLogChannel.send(newUserEmbed);
+});
 
 bot.login(process.env.BOT_TOKEN);

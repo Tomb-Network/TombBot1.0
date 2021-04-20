@@ -6,12 +6,12 @@ const fetch = require('node-fetch');
 
 module.exports.run = async (bot, message, args) => {
 
-let operatorname = args[2];
+let operatorname = args[2].charAt(0).toUpperCase() + args[2].slice(1);
 let platform = args[1];
 let name = args[0];
 
 if (!name || !platform || !operatorname)
-	return message.channel.send("The Correct Format is `!r6op <username> <platform> <op name>`");
+		return message.channel.send("The Correct Format is `!r6op <username> <platform> <op name>`");
 
  message.reply("Fetching Stats, this may take a while.").then(message => {message.delete({timeout:30000})});
 
@@ -28,9 +28,11 @@ if (!name || !platform || !operatorname)
 
 	// console.log(op);
 
-	if (operatorname === "Aruni"){
-		return message.reply("Aruni's stats are currently unavailable at this time.");
-	}	
+	 if (operatorname === "Aruni") {
+		 return message.reply("Aruni's stats are currently unavailable at this time.");
+	 } else if (operatorname === "Flores") {
+		 return message.reply("Flores' stats are currently unavailable at this time.");
+     }	
 
 playtime = op.playtime
 var hours = Math.floor(playtime / 3600);

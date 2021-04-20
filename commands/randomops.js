@@ -4,7 +4,7 @@ const fs = require("fs");
 
 module.exports.run = async (bot, message, args) => {
 
-	message.delete(180000);
+	message.delete({ timeout: 180000 });
 
 	let randomSide = args[0];
 	
@@ -766,7 +766,7 @@ module.exports.run = async (bot, message, args) => {
 		.addField(op5icon, op5)
 		.setFooter("Requested By: " + message.author.username, message.author.avatarURL())
 		.setTimestamp()
-	message.channel.send(randomopEmbed);//.then(message => { message.delete({ timeout: 180000 }) });
+	message.channel.send(randomopEmbed).then(message => { message.delete({ timeout: 180000 }) });
 	
 }	
 	

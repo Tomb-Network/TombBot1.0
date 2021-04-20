@@ -1,0 +1,1552 @@
+{
+  "Sledge": {
+    "primaryWeapons": [
+      "M590A1 <:M590A1:824309865559883826>",
+      "L85A2 <:L85A2:824011084066324531>"
+    ],
+    "secondaryWeapons": [
+      "P226 MK25 <:P226:824309865866199070>",
+      "SMG-11 <:SMG11:824309865852829716>"
+    ],
+    "specialGadget": "Breaching Hammer",
+    "secondaryGadgets": [
+      "Frag Grenade <:FragGrenade:826185979748024341>",
+      "Stun Grenade <:StunGrenade:826185980188557382>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "SAS",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823586941894262804/246.png",
+      "icon": "https://cdn.r6stats.com/badges/sledge_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822540877943275530/150.png"
+    }
+  },
+  "Thatcher": {
+    "primaryWeapons": [
+      "AR33 <:AR33:824011083244240907>",
+      "L85A2 <:L85A2:824011084066324531>",
+      "M590A1 <:M590A1:824309865559883826>"
+    ],
+    "secondaryWeapons": [
+      "P226 MK25 <:P226:824309865866199070>"
+    ],
+    "specialGadget": "EMP Grenade",
+    "secondaryGadgets": [
+      "Breach Charge <:BreachCharge:826188336434905088>",
+      "Claymore <:Claymore:826185980154609704>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "SAS",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823586769123016745/210.png",
+      "icon": "https://cdn.r6stats.com/badges/thatcher_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822540891490877450/150.png"
+    }
+  },
+  "Ash": {
+    "primaryWeapons": [
+      "G36C <:G36C:824011084038012928>",
+      "R4-C <:R4C:824309865572728894>"
+    ],
+    "secondaryWeapons": [
+      "M45 Meusoc <:M45MEUSOC:824309865160638515>",
+      "5.7 USG <:57USG:824011083404542004>"
+    ],
+    "specialGadget": "Breaching Round",
+    "secondaryGadgets": [
+      "Breach Charge <:BreachCharge:826188336434905088>",
+      "Claymore <:Claymore:826185980154609704>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 3,
+      "armorRating": 1,
+      "CTU": "FBI SWAT",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823586741344665660/173.png",
+      "icon": "https://cdn.r6stats.com/badges/ash_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541114665730058/150.png"
+    }
+  },
+  "Thermite": {
+    "primaryWeapons": [
+      "M1014 <:M1014:824309865689776138>",
+      "556XI <:556XI:824011083811389491>"
+    ],
+    "secondaryWeapons": [
+      "M45 Meusoc <:M45MEUSOC:824309865160638515>",
+      "5.7 USG <:57USG:824011083404542004>"
+    ],
+    "specialGadget": "Exothermic Charge",
+    "secondaryGadgets": [
+      "Claymore <:Claymore:826185980154609704>",
+      "Stun Grenade <:StunGrenade:826185980188557382>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "FBI SWAT",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823586718368006154/168.png",
+      "icon": "https://cdn.r6stats.com/badges/thermite_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541139143295046/150.png"
+    }
+  },
+  "Twitch": {
+    "primaryWeapons": [
+      "F2 <:F2:824011083865391145>",
+      "417 <:417:824011083919523911>",
+      "SG-CQB <:SGCQB:824309866059005992>"
+    ],
+    "secondaryWeapons": [
+      "P9 <:P9:824309866143285248>",
+      "LFP586 <:LFP586:824011083697356850>"
+    ],
+    "specialGadget": "Shock Drone",
+    "secondaryGadgets": [
+      "Claymore <:Claymore:826185980154609704>",
+      "Smoke Grenade <:SmokeGrenade:826188335998566482>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "GIGN",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823586677841985606/229.png",
+      "icon": "https://cdn.r6stats.com/badges/twitch_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541180507127854/150.png"
+    }
+  },
+  "Montagne": {
+    "primaryWeapons": [
+      "Le Roc <:LeRoc:826194639858040883>"
+    ],
+    "secondaryWeapons": [
+      "P9 <:P9:824309866143285248>",
+      "LFP586 <:LFP586:824011083697356850>"
+    ],
+    "specialGadget": "Le Roc Shield",
+    "secondaryGadgets": [
+      "Hard Breach Charge <:SecondaryHardBreach:823602434927886356>",
+      "Smoke Grenade <:SmokeGrenade:826188335998566482>"
+    ],
+    "other": {
+      "difficulty": 3,
+      "speedRating": 1,
+      "armorRating": 3,
+      "CTU": "GIGN",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823587395839721482/270.png",
+      "icon": "https://cdn.r6stats.com/badges/montagne_badge.png"
+    }
+  },
+  "Glaz": {
+    "primaryWeapons": [
+      "OTs-03 <:OTs03:824309865597239307>"
+    ],
+    "secondaryWeapons": [
+      "PMM <:PMM:824309865861742602>",
+      "GONNE-6 <:GONNE6:823598431125241887>"
+    ],
+    "specialGadget": "Flip Sight",
+    "secondaryGadgets": [
+      "Smoke Grenade <:SmokeGrenade:826188335998566482>",
+      "Frag Grenade <:FragGrenade:826185979748024341>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "Spetsnaz",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823586643633111080/232.png",
+      "icon": "https://cdn.r6stats.com/badges/glaz_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541250359066664/150.png"
+    }
+  },
+  "Fuze": {
+    "primaryWeapons": [
+      "Ballistic Shield <:BallisticShield:826194639819898890>",
+      "6P41 <:6P41:824011082824941609>",
+      "AK-12 <:AK12:824011083420270673>"
+    ],
+    "secondaryWeapons": [
+      "PMM <:PMM:824309865861742602>",
+      "GSH-18 <:GSH18:824011083668389939>"
+    ],
+    "specialGadget": "Cluster Charge",
+    "secondaryGadgets": [
+      "Breach Charge <:BreachCharge:826188336434905088>",
+      "Hard Breach Charge <:SecondaryHardBreach:823602434927886356>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 1,
+      "armorRating": 3,
+      "CTU": "Spetsnaz",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823586203042578442/258.png",
+      "icon": "https://cdn.r6stats.com/badges/fuze_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541266838487101/150.png"
+    }
+  },
+  "Blitz": {
+    "primaryWeapons": [
+      "G52-Tactical Shield <:FlashShield:826194639862235157>"
+    ],
+    "secondaryWeapons": [
+      "P12 <:P12:824309865820323880>"
+    ],
+    "specialGadget": "G52-Tactical Shield",
+    "secondaryGadgets": [
+      "Smoke Grenade <:SmokeGrenade:826188335998566482>",
+      "Breach Charge <:BreachCharge:826188336434905088>"
+    ],
+    "other": {
+      "difficulty": 3,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "GSG 9",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823585816004788274/300.png",
+      "icon": "https://cdn.r6stats.com/badges/blitz_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541338498170910/150.png"
+    }
+  },
+  "IQ": {
+    "primaryWeapons": [
+      "AUG A2 <:AUGA2:824011083701288960>",
+      "552 Commando <:552Commando:824011083672846366>",
+      "G8A1 <:G8A1:824011083689885776>"
+    ],
+    "secondaryWeapons": [
+      "P12 <:P12:824309865820323880>"
+    ],
+    "specialGadget": "Electronics Detector",
+    "secondaryGadgets": [
+      "Breach Charge <:BreachCharge:826188336434905088>",
+      "Claymore <:Claymore:826185980154609704>"
+    ],
+    "other": {
+      "difficulty": 3,
+      "speedRating": 3,
+      "armorRating": 1,
+      "CTU": "GSG 9",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823585791376097310/215.png",
+      "icon": "https://cdn.r6stats.com/badges/iq_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541353707110410/150.png"
+    }
+  },
+  "Buck": {
+    "primaryWeapons": [
+      "C8-SFW <:C8SFW:824011083735629824>",
+      "CAMRS <:CAMRS:824011083991613520>"
+    ],
+    "secondaryWeapons": [
+      "MK1 9mm <:MK19mm:824309865644032040>"
+    ],
+    "specialGadget": "Skeleton Key",
+    "secondaryGadgets": [
+      "Stun Grenade <:StunGrenade:826185980188557382>",
+      "Hard Breach Charge <:SecondaryHardBreach:823602434927886356>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "JTF2",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823585745322901544/187.png",
+      "icon": "https://cdn.r6stats.com/badges/buck_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541433013010493/150.png"
+    }
+  },
+  "Blackbeard": {
+    "primaryWeapons": [
+      "MK17 CQB <:Mk17CQB:824309865764618260>",
+      "SR-25 <:SR25:824309865954279474>"
+    ],
+    "secondaryWeapons": [
+      "D-50 <:D50:824011083685560330>"
+    ],
+    "specialGadget": "Rifle-Shield",
+    "secondaryGadgets": [
+      "Breach Charge <:BreachCharge:826188336434905088>",
+      "Stun Grenade <:StunGrenade:826185980188557382>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "Navy Seal",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823585709898203146/300.png",
+      "icon": "https://cdn.r6stats.com/badges/blackbeard_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541471902859294/150.png"
+    }
+  },
+  "Capitao": {
+    "primaryWeapons": [
+      "Para-308 <:PARA308:824309865501556737>",
+      "M249 <:M249:824309865102442538>"
+    ],
+    "secondaryWeapons": [
+      "PRB92 <:PRB92:824309865828450384>"
+    ],
+    "specialGadget": "Tactical Crossbow",
+    "secondaryGadgets": [
+      "Claymore <:Claymore:826185980154609704>",
+      "Hard Breach Charge <:SecondaryHardBreach:823602434927886356>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 3,
+      "armorRating": 1,
+      "CTU": "BOPE",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823585679425929216/300.png",
+      "icon": "https://cdn.r6stats.com/badges/capitao_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541505582596196/150.png"
+    }
+  },
+  "Hibana": {
+    "primaryWeapons": [
+      "Type-89 <:TYPE89:824731538536529950>",
+      "Supernova <:SUPERNOVA:824309865899098152>"
+    ],
+    "secondaryWeapons": [
+      "P229 <:P229:824309865769074712>",
+      "Bearing 9 <:BEARING9:824011083479515207>"
+    ],
+    "specialGadget": "X-KAIROS",
+    "secondaryGadgets": [
+      "Stun Grenade <:StunGrenade:826185980188557382>",
+      "Breach Charge <:BreachCharge:826188336434905088>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 3,
+      "armorRating": 1,
+      "CTU": "SAT",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823585606856212500/184.png",
+      "icon": "https://cdn.r6stats.com/badges/hibana_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541694465212476/150.png"
+    }
+  },
+  "Jackal": {
+    "primaryWeapons": [
+      "C7E <:C7E:824011083647549492>",
+      "PDW9 <:PDW9:824309865723854870>",
+      "ITA12-L <:ITA12L:824011083828166659>"
+    ],
+    "secondaryWeapons": [
+      "USP40 <:USP40:824732000623132712>",
+      "ITA12-S <:ITA12S:824011083923587113>"
+    ],
+    "specialGadget": "EYENOX MODEL III",
+    "secondaryGadgets": [
+      "Claymore <:Claymore:826185980154609704>",
+      "Smoke Grenade <:SmokeGrenade:826188335998566482>"
+    ],
+    "other": {
+      "difficulty": 3,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "GEO",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823585524879065098/300.png",
+      "icon": "https://cdn.r6stats.com/badges/jackal_badge.png"
+    }
+  },
+  "Ying": {
+    "primaryWeapons": [
+      "T-95 LSW <:T95LSW:824309865979314246>",
+      "SIX12 <:SIX12:824309865861218366>"
+    ],
+    "secondaryWeapons": [
+      "Q-929 <:Q929:824309865904209990>"
+    ],
+    "specialGadget": "Candela",
+    "secondaryGadgets": [
+      "Hard Breach Charge <:SecondaryHardBreach:823602434927886356>",
+      "Smoke Grenade <:SmokeGrenade:826188335998566482>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "SDU",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823585424252731412/184.png",
+      "icon": "https://cdn.r6stats.com/badges/ying_badge.png"
+    }
+  },
+  "Zofia": {
+    "primaryWeapons": [
+      "LMG-E <:LMGE:824011083642568736>",
+      "M762 <:M762:824309865940910111>"
+    ],
+    "secondaryWeapons": [
+      "RG15 <:RG15:824309866142367814>"
+    ],
+    "specialGadget": "KS79 Lifeline",
+    "secondaryGadgets": [
+      "Breach Charge <:BreachCharge:826188336434905088>",
+      "Claymore <:Claymore:826185980154609704>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "GROM",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823585393651220520/300.png",
+      "icon": "https://cdn.r6stats.com/badges/zofia_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541838292484167/150.png"
+    }
+  },
+  "Dokkaebi": {
+    "primaryWeapons": [
+      "Mk 14 EBR <:Mk14EBR:824309865744433252>",
+      "BOSG.12.2 <:BOSG12:824011083336646657>"
+    ],
+    "secondaryWeapons": [
+      "SMG-12 <:SMG12:824309865987702794>",
+      "GONNE-6 <:GONNE6:823598431125241887>"
+    ],
+    "specialGadget": "Logic Bomb",
+    "secondaryGadgets": [
+      "Smoke Grenade <:SmokeGrenade:826188335998566482>",
+      "Stun Grenade <:StunGrenade:826185980188557382>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "707th SMB",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823585360771940413/156.png",
+      "icon": "https://cdn.r6stats.com/badges/dokkaebi_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541870356758578/150.png"
+    }
+  },
+  "Lion": {
+    "primaryWeapons": [
+      "V308 <:V308:824731538331402251>",
+      "417 <:417:824011083919523911>",
+      "SG-CQB <:SGCQB:824309866059005992>"
+    ],
+    "secondaryWeapons": [
+      "LFP586 <:LFP586:824011083697356850>",
+      "GONNE-6 <:GONNE6:823598431125241887>"
+    ],
+    "specialGadget": "EE-ONE-D",
+    "secondaryGadgets": [
+      "Stun Grenade <:StunGrenade:826185980188557382>",
+      "Claymore <:Claymore:826185980154609704>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "CBRN THREAT UNIT",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823585297056268298/310.png",
+      "icon": "https://cdn.r6stats.com/badges/lion_badge.png"
+    }
+  },
+  "Finka": {
+    "primaryWeapons": [
+      "SPEAR .308 <:SPEAR308:824309866088235028>",
+      "6P41 <:6P41:824011082824941609>",
+      "SASG-12 <:SASG12:824309865936584714>"
+    ],
+    "secondaryWeapons": [
+      "PMM <:PMM:824309865861742602>",
+      "GONNE-6 <:GONNE6:823598431125241887>"
+    ],
+    "specialGadget": "Adrenal Surge",
+    "secondaryGadgets": [
+      "Hard Breach Charge <:SecondaryHardBreach:823602434927886356>",
+      "Stun Grenade <:StunGrenade:826185980188557382>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "CBRN THREAT UNIT",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823585263094857828/210.png",
+      "icon": "https://cdn.r6stats.com/badges/finka_badge.png"
+    }
+  },
+  "Maverick": {
+    "primaryWeapons": [
+      "AR-15.50 <:AR15:824011083744149544>",
+      "M4 <:M4:824011083777572906>"
+    ],
+    "secondaryWeapons": [
+      "1911 TACOPS <:1911TACOPS:824011083542691861>"
+    ],
+    "specialGadget": "Breaching Torch",
+    "secondaryGadgets": [
+      "Frag Grenade <:FragGrenade:826185979748024341>",
+      "Claymore <:Claymore:826185980154609704>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 3,
+      "armorRating": 1,
+      "CTU": "GSUTR",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823584968709767178/277.png",
+      "icon": "https://cdn.r6stats.com/badges/maverick_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541886958075964/150.png"
+    }
+  },
+  "Nomad": {
+    "primaryWeapons": [
+      "AK-74M <:AK74M:824011083198496879>",
+      "ARX200 <:ARX200:824011083609276436>"
+    ],
+    "secondaryWeapons": [
+      ".44 Mag Semi-Auto <:44Automag:824011083597217873>",
+      "PRB92 <:PRB92:824309865828450384>"
+    ],
+    "specialGadget": "Airjab Launcher",
+    "secondaryGadgets": [
+      "Stun Grenade <:StunGrenade:826185980188557382>",
+      "Breach Charge <:BreachCharge:826188336434905088>"
+    ],
+    "other": {
+      "difficulty": 3,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "GIGR",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823584883870793778/300.png",
+      "icon": "https://cdn.r6stats.com/badges/nomad_badge.png"
+    }
+  },
+  "Gridlock": {
+    "primaryWeapons": [
+      "F90 <:F90:824011083936563230>",
+      "M249 SAW <:M249SAW:824309865597632602>"
+    ],
+    "secondaryWeapons": [
+      "Super Shorty <:SUPERSHORTY:824309866087710742>",
+      "GONNE-6 <:GONNE6:823598431125241887>"
+    ],
+    "specialGadget": "Trax Stingers",
+    "secondaryGadgets": [
+      "Smoke Grenade <:SmokeGrenade:826188335998566482>",
+      "Breach Charge <:BreachCharge:826188336434905088>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 1,
+      "armorRating": 3,
+      "CTU": "SASR",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823584808982282240/208.png",
+      "icon": "https://cdn.r6stats.com/badges/gridlock_badge.png"
+    }
+  },
+  "Nokk": {
+    "primaryWeapons": [
+      "FMG-9 <:FMG9:824011083588829185>",
+      "SIX12 SD <:SIX12SD:824309865992028231>"
+    ],
+    "secondaryWeapons": [
+      "5.7 USG <:57USG:824011083404542004>",
+      "D-50 <:D50:824011083685560330>"
+    ],
+    "specialGadget": "HEL Presence Reduction",
+    "secondaryGadgets": [
+      "Frag Grenade <:FragGrenade:826185979748024341>",
+      "Hard Breach Charge <:SecondaryHardBreach:823602434927886356>"
+    ],
+    "other": {
+      "difficulty": 3,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "Jaegar Corps",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823582762019192872/154.png",
+      "icon": "https://cdn.r6stats.com/badges/nokk_badge.png"
+    }
+  },
+  "Amaru": {
+    "primaryWeapons": [
+      "G8A1 <:G8A1:824011083689885776>",
+      "Supernova <:SUPERNOVA:824309865899098152>"
+    ],
+    "secondaryWeapons": [
+      "SMG-11 <:SMG11:824309865852829716>",
+      "GONNE-6 <:GONNE6:823598431125241887>"
+    ],
+    "specialGadget": "Garra Hook",
+    "secondaryGadgets": [
+      "Hard Breach Charge <:SecondaryHardBreach:823602434927886356>",
+      "Stun Grenade <:StunGrenade:826185980188557382>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "APCA",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823582729592635392/278.png",
+      "icon": "https://cdn.r6stats.com/badges/amaru_badge.png"
+    }
+  },
+  "Kali": {
+    "primaryWeapons": [
+      "CSRX 300 <:CSRX300:824011083860672552>"
+    ],
+    "secondaryWeapons": [
+      "SPSMG9 <:SPSMG9:824309865937371148>",
+      "C75 Auto <:C75:824011083756732467>"
+    ],
+    "specialGadget": "LV Explosive Lance",
+    "secondaryGadgets": [
+      "Claymore <:Claymore:826185980154609704>",
+      "Breach Charge <:BreachCharge:826188336434905088>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "Nighthaven",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823582698517037146/168.png",
+      "icon": "https://cdn.r6stats.com/badges/kali_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541903169847306/150.png"
+    }
+  },
+  "Iana": {
+    "primaryWeapons": [
+      "ARX200 <:ARX200:824011083609276436>",
+      "G36C <:G36C:824011084038012928>"
+    ],
+    "secondaryWeapons": [
+      "MK1 9mm <:MK19mm:824309865644032040>",
+      "GONNE-6 <:GONNE6:823598431125241887>"
+    ],
+    "specialGadget": "Gemini Replicator",
+    "secondaryGadgets": [
+      "Frag Grenade <:FragGrenade:826185979748024341>",
+      "Smoke Grenade <:SmokeGrenade:826188335998566482>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "REU",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823582660693458964/162.png",
+      "icon": "https://cdn.r6stats.com/badges/iana_badge.png"
+    }
+  },
+  "Ace": {
+    "primaryWeapons": [
+      "AK-12 <:AK12:824011083420270673>",
+      "M1014 <:M1014:824309865689776138>"
+    ],
+    "secondaryWeapons": [
+      "P9 <:P9:824309866143285248>"
+    ],
+    "specialGadget": "S.E.L.M.A Aqua Breacher",
+    "secondaryGadgets": [
+      "Breach Charge <:BreachCharge:826188336434905088>",
+      "Smoke Grenade <:SmokeGrenade:826188335998566482>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "Nighthaven",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823582608951869450/278.png",
+      "icon": "https://cdn.r6stats.com/badges/ace_badge.png"
+    }
+  },
+  "Zero": {
+    "primaryWeapons": [
+      "SC3000K <:SC3000K:823602537948905533>",
+      "MP7 <:MP7:824309865979183124>"
+    ],
+    "secondaryWeapons": [
+      "5.7 USG <:57USG:824011083404542004>",
+      "GONNE-6 <:GONNE6:823598431125241887>"
+    ],
+    "specialGadget": "ARGUS Launcher",
+    "secondaryGadgets": [
+      "Hard Breach Charge <:SecondaryHardBreach:823602434927886356>",
+      "Claymore <:Claymore:826185980154609704>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "ROS",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823582508318326794/294.png",
+      "icon": "https://cdn.r6stats.com/badges/zero_badge.png"
+    }
+  },
+  "Flores": {
+    "primaryWeapons": [
+      "AR33 <:AR33:824011083244240907>",
+      "SR-25 <:SR25:824309865954279474>"
+    ],
+    "secondaryWeapons": [
+      "GSH-18 <:GSH18:824011083668389939>"
+    ],
+    "specialGadget": "RCE-Ratero Charge",
+    "secondaryGadgets": [
+      "Stun Grenade <:StunGrenade:826185980188557382>",
+      "Claymore <:Claymore:826185980154609704>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "Unaffiliated",
+      "Side": "Attacker"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822540637181575169/823582433307918338/294.png",
+      "icon": "https://static.wikia.nocookie.net/rainbowsix/images/a/a9/Flores_icon.png"
+    }
+  },
+  "Smoke": {
+    "primaryWeapons": [
+      "FMG-9 <:FMG9:824011083588829185>",
+      "M590A1 <:M590A1:824309865559883826>"
+    ],
+    "secondaryWeapons": [
+      "P226 MK25 <:P226:824309865866199070>",
+      "SMG-11 <:SMG11:824309865852829716>"
+    ],
+    "specialGadget": "Remote Gas Grenade",
+    "secondaryGadgets": [
+      "Barbed Wire <:Barbedwire:826185979701231628>",
+      "Deployable Shield <:DeployableShield:826186484859404318>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "SAS",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822352036947427348/227.png",
+      "icon": "https://cdn.r6stats.com/badges/smoke_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541046751690760/150.png"
+    }
+  },
+  "Mute": {
+    "primaryWeapons": [
+      "MP5-K <:MP5K:824309865853222912>",
+      "M590A1 <:M590A1:824309865559883826>"
+    ],
+    "secondaryWeapons": [
+      "P226 MK25 <:P226:824309865866199070>",
+      "SMG-11 <:SMG11:824309865852829716>"
+    ],
+    "specialGadget": "Signal Disrupter",
+    "secondaryGadgets": [
+      "Nitro Cell <:NitroCell:826185980159328266>",
+      "Bulletproof Camera <:BulletproofCamera:826188336435429386>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "SAS",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822352004454154250/216.png",
+      "icon": "https://cdn.r6stats.com/badges/mute_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541061754716160/150.png"
+    }
+  },
+  "Castle": {
+    "primaryWeapons": [
+      "UMP-45 <:UMP45:824731538532204594>",
+      "M1014 <:M1014:824309865689776138>"
+    ],
+    "secondaryWeapons": [
+      "5.7 USG <:57USG:824011083404542004>",
+      "Super Shorty <:SUPERSHORTY:824309866087710742>"
+    ],
+    "specialGadget": "Armor Panel",
+    "secondaryGadgets": [
+      "Bulletproof Camera <:BulletproofCamera:826188336435429386>",
+      "Proximity Alarm <:ProximityAlarm:823602435108765728>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "FBI SWAT",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822351714249342996/175.png",
+      "icon": "https://cdn.r6stats.com/badges/castle_badge.png"
+    }
+  },
+  "Pulse": {
+    "primaryWeapons": [
+      "M1014 <:M1014:824309865689776138>",
+      "UMP-45 <:UMP45:824731538532204594>"
+    ],
+    "secondaryWeapons": [
+      "M45 Meusoc <:M45MEUSOC:824309865160638515>",
+      "5.7 USG <:57USG:824011083404542004>"
+    ],
+    "specialGadget": "Cardiac Sensor",
+    "secondaryGadgets": [
+      "Barbed Wire <:Barbedwire:826185979701231628>",
+      "Nitro Cell <:NitroCell:826185980159328266>"
+    ],
+    "other": {
+      "difficulty": 3,
+      "speedRating": 3,
+      "armorRating": 1,
+      "CTU": "FBI SWAT",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822351279430434826/186.png",
+      "icon": "https://cdn.r6stats.com/badges/pulse_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541154096381962/150.png"
+    }
+  },
+  "Doc": {
+    "primaryWeapons": [
+      "SG-CQB <:SGCQB:824309866059005992>",
+      "MP5 <:MP5:824309866028859442>",
+      "P90 <:P90:824309865706029097>"
+    ],
+    "secondaryWeapons": [
+      "P9 <:P9:824309866143285248>",
+      "LFP586 <:LFP586:824011083697356850>"
+    ],
+    "specialGadget": "Stim Pistol",
+    "secondaryGadgets": [
+      "Bulletproof Camera <:BulletproofCamera:826188336435429386>",
+      "Barbed Wire <:Barbedwire:826185979701231628>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 1,
+      "armorRating": 3,
+      "CTU": "GIGN",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822351113981526046/197.png",
+      "icon": "https://cdn.r6stats.com/badges/doc_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541197343850576/150.png"
+    }
+  },
+  "Rook": {
+    "primaryWeapons": [
+      "P90 <:P90:824309865706029097>",
+      "MP5 <:MP5:824309866028859442>",
+      "SG-CQB <:SGCQB:824309866059005992>"
+    ],
+    "secondaryWeapons": [
+      "LFP586 <:LFP586:824011083697356850>",
+      "P9 <:P9:824309866143285248>"
+    ],
+    "specialGadget": "Armor Pack",
+    "secondaryGadgets": [
+      "Proximity Alarm <:ProximityAlarm:823602435108765728>",
+      "Impact Grenade <:ImpactGrenade:826185980322906182>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 1,
+      "armorRating": 3,
+      "CTU": "GIGN",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822351077294342144/223.png",
+      "icon": "https://cdn.r6stats.com/badges/rook_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541216867811328/150.png"
+    }
+  },
+  "Kapkan": {
+    "primaryWeapons": [
+      "9x19VSN <:9x19VSN:824011083568119848>",
+      "SASG-12 <:SASG12:824309865936584714>"
+    ],
+    "secondaryWeapons": [
+      "PMM <:PMM:824309865861742602>",
+      "GSH-18 <:GSH18:824011083668389939>"
+    ],
+    "specialGadget": "Entry Denial Device",
+    "secondaryGadgets": [
+      "Impact Grenade <:ImpactGrenade:826185980322906182>",
+      "Nitro Cell <:NitroCell:826185980159328266>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "Spetsnaz",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822350889167093790/211.png",
+      "icon": "https://cdn.r6stats.com/badges/kapkan_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541285374165052/150.png"
+    }
+  },
+  "Tachanka": {
+    "primaryWeapons": [
+      "DP27 <:DP27:826201402414071829>",
+      "9x19VSN <:9x19VSN:824011083568119848>"
+    ],
+    "secondaryWeapons": [
+      "GSH-18 <:GSH18:824011083668389939>",
+      "PMM <:PMM:824309865861742602>"
+    ],
+    "specialGadget": "Shumikha Launcher",
+    "secondaryGadgets": [
+      "Barbed Wire <:Barbedwire:826185979701231628>",
+      "Proximity Alarm <:ProximityAlarm:823602435108765728>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 1,
+      "armorRating": 3,
+      "CTU": "Spetsnaz",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822350160440066058/248.png",
+      "icon": "https://static.wikia.nocookie.net/rainbowsix/images/8/8c/Tachanka_Badge_Rework.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541302616424518/150.png"
+    }
+  },
+  "Jäger": {
+    "primaryWeapons": [
+      "M870 <:M870:824309865743777802>",
+      "416-C Carbine <:416C:824011083785437184>"
+    ],
+    "secondaryWeapons": [
+      "P12 <:P12:824309865820323880>"
+    ],
+    "specialGadget": "Active Defense System",
+    "secondaryGadgets": [
+      "Bulletproof Camera <:BulletproofCamera:826188336435429386>",
+      "Barbed Wire <:Barbedwire:826185979701231628>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "GSG 9",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822350109765271552/300.png",
+      "icon": "https://cdn.r6stats.com/badges/jager_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541371109671002/150.png"
+    }
+  },
+  "Bandit": {
+    "primaryWeapons": [
+      "MP7 <:MP7:824309865979183124>",
+      "M870 <:M870:824309865743777802>"
+    ],
+    "secondaryWeapons": [
+      "P12 <:P12:824309865820323880>"
+    ],
+    "specialGadget": "Shock Wire",
+    "secondaryGadgets": [
+      "Barbed Wire <:Barbedwire:826185979701231628>",
+      "Nitro Cell <:NitroCell:826185980159328266>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 1,
+      "armorRating": 3,
+      "CTU": "GSG 9",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822350072372396062/300.png",
+      "icon": "https://cdn.r6stats.com/badges/bandit_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541384439037962/150.png"
+    }
+  },
+  "Frost": {
+    "primaryWeapons": [
+      "Super 90 <:SUPER90:824309865711271947>",
+      "9mm C1 <:9mmC1:824011085966999639>"
+    ],
+    "secondaryWeapons": [
+      "MK1 9mm <:MK19mm:824309865644032040>",
+      "ITA12-S <:ITA12S:824011083923587113>"
+    ],
+    "specialGadget": "Welcome Mat",
+    "secondaryGadgets": [
+      "Bulletproof Camera <:BulletproofCamera:826188336435429386>",
+      "Deployable Shield <:DeployableShield:826186484859404318>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "JTF2",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822350043666579457/300.png",
+      "icon": "https://cdn.r6stats.com/badges/frost_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541447571963934/150.png"
+    }
+  },
+  "Valkyrie": {
+    "primaryWeapons": [
+      "MPX <:MPX:824309866045636658>",
+      "SPAS-12 <:SPAS12:824309865500901409>"
+    ],
+    "secondaryWeapons": [
+      "D-50 <:D50:824011083685560330>"
+    ],
+    "specialGadget": "Black Eye",
+    "secondaryGadgets": [
+      "Impact Grenade <:ImpactGrenade:826185980322906182>",
+      "Nitro Cell <:NitroCell:826185980159328266>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "Navy Seal",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822350004492304415/300.png",
+      "icon": "https://cdn.r6stats.com/badges/valkyrie_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541485333151834/150.png"
+    }
+  },
+  "Caveira": {
+    "primaryWeapons": [
+      "M12 <:M12:824309865367207977>",
+      "SPAS-15 <:SPAS15:824309865970794515>"
+    ],
+    "secondaryWeapons": [
+      "Luison <:LUISON:824011083630116925>"
+    ],
+    "specialGadget": "Silent Step",
+    "secondaryGadgets": [
+      "Impact Grenade <:ImpactGrenade:826185980322906182>",
+      "Proximity Alarm <:ProximityAlarm:823602435108765728>"
+    ],
+    "other": {
+      "difficulty": 3,
+      "speedRating": 3,
+      "armorRating": 1,
+      "CTU": "BOPE",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822349310616272946/300.png",
+      "icon": "https://cdn.r6stats.com/badges/caveira_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541520485744720/150.png"
+    }
+  },
+  "Echo": {
+    "primaryWeapons": [
+      "Supernova <:SUPERNOVA:824309865899098152>",
+      "MP5SD <:MP5SD:824309865870262303>"
+    ],
+    "secondaryWeapons": [
+      "P229 <:P229:824309865769074712>",
+      "Bearing 9 <:BEARING9:824011083479515207>"
+    ],
+    "specialGadget": "Yokai",
+    "secondaryGadgets": [
+      "Impact Grenade <:ImpactGrenade:826185980322906182>",
+      "Deployable Shield <:DeployableShield:826186484859404318>"
+    ],
+    "other": {
+      "difficulty": 3,
+      "speedRating": 1,
+      "armorRating": 3,
+      "CTU": "SAT",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822349214612193290/200.png",
+      "icon": "https://cdn.r6stats.com/badges/echo_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541708725190706/150.png"
+    }
+  },
+  "Mira": {
+    "primaryWeapons": [
+      "Vector .45 ACP <:VECTOR45ACP:824731538415157289>",
+      "ITA12-L <:ITA12L:824011083828166659>"
+    ],
+    "secondaryWeapons": [
+      "USP40 <:USP40:824732000623132712>",
+      "ITA12-S <:ITA12S:824011083923587113>"
+    ],
+    "specialGadget": "Black Mirror",
+    "secondaryGadgets": [
+      "Proximity Alarm <:ProximityAlarm:823602435108765728>",
+      "Nitro Cell <:NitroCell:826185980159328266>"
+    ],
+    "other": {
+      "difficulty": 3,
+      "speedRating": 1,
+      "armorRating": 3,
+      "CTU": "GEO",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822348847282913340/300.png",
+      "icon": "https://cdn.r6stats.com/badges/mira_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541727885295646/150.png"
+    }
+  },
+  "Lesion": {
+    "primaryWeapons": [
+      "SIX12 SD <:SIX12SD:824309865992028231>",
+      "T-5 SMG <:T5SMG:824309865962405918>"
+    ],
+    "secondaryWeapons": [
+      "Q-929 <:Q929:824309865904209990>"
+    ],
+    "specialGadget": "Gu",
+    "secondaryGadgets": [
+      "Impact Grenade <:ImpactGrenade:826185980322906182>",
+      "Bulletproof Camera <:BulletproofCamera:826188336435429386>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "SDU",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822348816850223104/300.png",
+      "icon": "https://cdn.r6stats.com/badges/lesion_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541818872332398/150.png"
+    }
+  },
+  "Ela": {
+    "primaryWeapons": [
+      "Scorpion Evo 3 A1 <:SCORPIONEVO3:824309865617817631>",
+      "FO-12 <:FO12:824011083970379787>"
+    ],
+    "secondaryWeapons": [
+      "RG15 <:RG15:824309866142367814>"
+    ],
+    "specialGadget": "Grzmot Mine",
+    "secondaryGadgets": [
+      "Barbed Wire <:Barbedwire:826185979701231628>",
+      "Deployable Shield <:DeployableShield:826186484859404318>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 3,
+      "armorRating": 1,
+      "CTU": "GROM",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822348348778217472/300.png",
+      "icon": "https://cdn.r6stats.com/badges/ela_badge.png",
+      "elite": "https://cdn.discordapp.com/attachments/822540735017517056/822541852808577024/150.png"
+    }
+  },
+  "Vigil": {
+    "primaryWeapons": [
+      "K1A <:K1A:824011083944558632>",
+      "BOSG.12.2 <:BOSG12:824011083336646657>"
+    ],
+    "secondaryWeapons": [
+      "C75 Auto <:C75:824011083756732467>",
+      "SMG-12 <:SMG12:824309865987702794>"
+    ],
+    "specialGadget": "ERC-7",
+    "secondaryGadgets": [
+      "Bulletproof Camera <:BulletproofCamera:826188336435429386>",
+      "Impact Grenade <:ImpactGrenade:826185980322906182>"
+    ],
+    "other": {
+      "difficulty": 3,
+      "speedRating": 3,
+      "armorRating": 1,
+      "CTU": "707th SMB",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822348320906280980/198.png",
+      "icon": "https://cdn.r6stats.com/badges/vigil_badge.png"
+    }
+  },
+  "Maestro": {
+    "primaryWeapons": [
+      "ALDA 5.56 <:ALDA556:824011083718197258>",
+      "ACS12 <:ACS12:824011083739955241>"
+    ],
+    "secondaryWeapons": [
+      "Bailiff 410 <:BAILIFF410:824011083630903386>",
+      "Keratos .357 <:KERATOS357:824011084087427152>"
+    ],
+    "specialGadget": "Evil Eye",
+    "secondaryGadgets": [
+      "Barbed Wire <:Barbedwire:826185979701231628>",
+      "Impact Grenade <:ImpactGrenade:826185980322906182>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 1,
+      "armorRating": 3,
+      "CTU": "GIS",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822348291018588180/261.png",
+      "icon": "https://cdn.r6stats.com/badges/maestro_badge.png"
+    }
+  },
+  "Alibi": {
+    "primaryWeapons": [
+      "Mx4 Storm <:MX4STORM:824309866113663026>",
+      "ACS12 <:ACS12:824011083739955241>"
+    ],
+    "secondaryWeapons": [
+      "Keratos .357 <:KERATOS357:824011084087427152>",
+      "Bailiff 410 <:BAILIFF410:824011083630903386>"
+    ],
+    "specialGadget": "Prisma",
+    "secondaryGadgets": [
+      "Impact Grenade <:ImpactGrenade:826185980322906182>",
+      "Deployable Shield <:DeployableShield:826186484859404318>"
+    ],
+    "other": {
+      "difficulty": 3,
+      "speedRating": 3,
+      "armorRating": 1,
+      "CTU": "GIS",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822348256569851914/182.png",
+      "icon": "https://cdn.r6stats.com/badges/alibi_badge.png"
+    }
+  },
+  "Clash": {
+    "primaryWeapons": [
+      "CCE Shield <:CCE_Shield:826194639862235156>"
+    ],
+    "secondaryWeapons": [
+      "P-10C <:P10C:824309865953624065>",
+      "SPSMG9 <:SPSMG9:824309865937371148>"
+    ],
+    "specialGadget": "CCE Shield",
+    "secondaryGadgets": [
+      "Barbed Wire <:Barbedwire:826185979701231628>",
+      "Impact Grenade <:ImpactGrenade:826185980322906182>"
+    ],
+    "other": {
+      "difficulty": 3,
+      "speedRating": 1,
+      "armorRating": 3,
+      "CTU": "GSUTR",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822348019504250950/309.png",
+      "icon": "https://cdn.r6stats.com/badges/clash_badge.png"
+    }
+  },
+  "Kaid": {
+    "primaryWeapons": [
+      "AUG A3 <:AUGA3:824011083496816681>",
+      "TCSG12 <:TCSG12:824731538427609129>"
+    ],
+    "secondaryWeapons": [
+      ".44 Mag Semi-Auto <:44Automag:824011083597217873>",
+      "LFP586 <:LFP586:824011083697356850>"
+    ],
+    "specialGadget": "Electroclaw",
+    "secondaryGadgets": [
+      "Nitro Cell <:NitroCell:826185980159328266>",
+      "Barbed Wire <:Barbedwire:826185979701231628>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 1,
+      "armorRating": 3,
+      "CTU": "GIGR",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822347462261080145/300.png",
+      "icon": "https://cdn.r6stats.com/badges/kaid_badge.png"
+    }
+  },
+  "Mozzie": {
+    "primaryWeapons": [
+      "Commando 9 <:COMMANDO9:824011083303616513>",
+      "P10 Roni <:P10RONI:824309865916399638>"
+    ],
+    "secondaryWeapons": [
+      "SDP 9mm <:SDP9mm:824309865941041211>"
+    ],
+    "specialGadget": "Pest Launcher",
+    "secondaryGadgets": [
+      "Barbed Wire <:Barbedwire:826185979701231628>",
+      "Nitro Cell <:NitroCell:826185980159328266>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "SASR",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822346643563085824/154.png",
+      "icon": "https://cdn.r6stats.com/badges/mozzie_badge.png"
+    }
+  },
+  "Warden": {
+    "primaryWeapons": [
+      "M590A1 <:M590A1:824309865559883826>",
+      "MPX <:MPX:824309866045636658>"
+    ],
+    "secondaryWeapons": [
+      "P-10C <:P10C:824309865953624065>",
+      "SMG-12 <:SMG12:824309865987702794>"
+    ],
+    "specialGadget": "Glance Smart Glasses",
+    "secondaryGadgets": [
+      "Deployable Shield <:DeployableShield:826186484859404318>",
+      "Nitro Cell <:NitroCell:826185980159328266>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "Secret Service",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822346590013358090/167.png",
+      "icon": "https://cdn.r6stats.com/badges/warden_badge.png"
+    }
+  },
+  "Goyo": {
+    "primaryWeapons": [
+      "Vector .45 ACP <:VECTOR45ACP:824731538415157289>",
+      "TCSG12 <:TCSG12:824731538427609129>"
+    ],
+    "secondaryWeapons": [
+      "P229 <:P229:824309865769074712>"
+    ],
+    "specialGadget": "Volcán Shield",
+    "secondaryGadgets": [
+      "Proximity Alarm <:ProximityAlarm:823602435108765728>",
+      "Nitro Cell <:NitroCell:826185980159328266>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "FES",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822346536528248832/294.png",
+      "icon": "https://cdn.r6stats.com/badges/goyo_badge.png"
+    }
+  },
+  "Wamai": {
+    "primaryWeapons": [
+      "AUG A2 <:AUGA2:824011083701288960>",
+      "MP5-K <:MP5K:824309865853222912>"
+    ],
+    "secondaryWeapons": [
+      "Keratos .357 <:KERATOS357:824011084087427152>",
+      "P12 <:P12:824309865820323880>"
+    ],
+    "specialGadget": "Mag-NET System",
+    "secondaryGadgets": [
+      "Impact Grenade <:ImpactGrenade:826185980322906182>",
+      "Proximity Alarm <:ProximityAlarm:823602435108765728>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "Nighthaven",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822346483998261268/220.png",
+      "icon": "https://cdn.r6stats.com/badges/wamai_badge.png"
+    }
+  },
+  "Oryx": {
+    "primaryWeapons": [
+      "T-5 SMG <:T5SMG:824309865962405918>",
+      "SPAS-12 <:SPAS12:824309865500901409>"
+    ],
+    "secondaryWeapons": [
+      "Bailiff 410 <:BAILIFF410:824011083630903386>",
+      "USP40 <:USP40:824732000623132712>"
+    ],
+    "specialGadget": "Remah Dash",
+    "secondaryGadgets": [
+      "Barbed Wire <:Barbedwire:826185979701231628>",
+      "Proximity Alarm <:ProximityAlarm:823602435108765728>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "GIGR",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822346451530154014/148.png",
+      "icon": "https://cdn.r6stats.com/badges/oryx_badge.png"
+    }
+  },
+  "Melusi": {
+    "primaryWeapons": [
+      "MP5 <:MP5:824309866028859442>",
+      "Super 90 <:SUPER90:824309865711271947>"
+    ],
+    "secondaryWeapons": [
+      "RG15 <:RG15:824309866142367814>"
+    ],
+    "specialGadget": "Banshee Sonic Defense",
+    "secondaryGadgets": [
+      "Nitro Cell <:NitroCell:826185980159328266>",
+      "Impact Grenade <:ImpactGrenade:826185980322906182>"
+    ],
+    "other": {
+      "difficulty": 1,
+      "speedRating": 3,
+      "armorRating": 1,
+      "CTU": "Inkaba Task Force",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822346388007682109/278.png",
+      "icon": "https://cdn.r6stats.com/badges/melusi_badge.png"
+    }
+  },
+  "Aruni": {
+    "primaryWeapons": [
+      "P10 Roni <:P10RONI:824309865916399638>",
+      "Mk 14 EBR <:Mk14EBR:824309865744433252>"
+    ],
+    "secondaryWeapons": [
+      "PRB92 <:PRB92:824309865828450384>"
+    ],
+    "specialGadget": "Surya Gate",
+    "secondaryGadgets": [
+      "Barbed Wire <:Barbedwire:826185979701231628>",
+      "Bulletproof Camera <:BulletproofCamera:826188336435429386>"
+    ],
+    "other": {
+      "difficulty": 2,
+      "speedRating": 2,
+      "armorRating": 2,
+      "CTU": "Nighthaven",
+      "Side": "Defender"
+    },
+    "images": {
+      "fullbody": "https://cdn.discordapp.com/attachments/822345054873845770/822346303039995924/500.png",
+      "icon": "https://cdn.r6stats.com/badges/aruni_badge.png"
+    }
+  }
+}
